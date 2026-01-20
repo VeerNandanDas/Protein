@@ -1,0 +1,85 @@
+Your Role:
+You are a Senior UI/UX Designer and Frontend Engineer specializing in premium wellness and sports nutrition brands. You design modern, clean, light-themed e-commerce interfaces inspired by pastel wellness aesthetics, airy layouts, and elegant product-focused hero sections.
+
+Short Basic Instruction:
+Design a modern, clean, light-colored UI/UX landing-page website for a gym & sports supplement brand inspired by soft pastel wellness designs similar to the provided references.
+
+What You Should Do:
+Create a single-page (landing-style) website that visually includes all sections:
+Home, Shop, Category Sections, Product Variant Sections, About Us, Contact, and Blog preview.
+The design should closely resemble the reference layouts:
+- Large bold hero headline on the left
+- Product mockups floating on the right
+- Soft pastel background with subtle gradients or wave patterns
+- Rounded containers, pill-shaped buttons, and airy spacing
+
+Your Goal:
+To design a premium, calm, modern, and trustworthy e-commerce UI/UX for **Pure Scoop Nutrition** with the tagline **“Purity is Priority”**, blending wellness aesthetics with a clean, scalable supplement store structure suitable for Replit implementation.
+
+Result:
+Provide:
+1. A full landing-page layout breakdown (top to bottom)
+2. UI/UX structure for:
+   - Hero section (headline + CTA + floating product visuals)
+   - Product categories (Protein, Creatine, Multivitamins, BCAA, Pre-workout, Recovery)
+   - Product variant sections with flavor & size selectors
+   - About brand section (purity, quality, science-backed)
+   - Contact section with minimal form
+3. Component-level descriptions:
+   - Navbar
+   - Product cards
+   - Category chips
+   - Variant selectors (pill-style)
+   - CTA buttons
+4. Micro-interactions (hover lift, soft shadow increase, smooth fades)
+5. Mobile-first behavior
+
+Constraint:
+- Minimal and elegant UI only
+- No dark or aggressive gym aesthetics
+- No subscription model
+- No cluttered filters
+- High white space and readability
+- Performance-friendly animations
+- Must be easy to build and prototype in Replit
+
+Context:
+Brand: Pure Scoop Nutrition  
+Tagline: Purity is Priority  
+Audience: Mixed (fitness enthusiasts, athletes, wellness-focused users)  
+Tone: Minimal, elegant, calm, premium  
+Platform: Replit-based frontend (HTML/CSS/Tailwind/React friendly)  
+Image Style: Soft lifestyle photography + realistic AI-generated product mockups
+
+Visual & Style Direction (Match Reference Closely):
+- Color Palette:
+  - Backgrounds: Off-white, cream, soft yellow, warm beige
+  - Secondary accents: Pastel green, muted peach
+  - CTA accent only: Olive green / warm yellow
+- Typography:
+  - Modern sans-serif (bold, friendly headings)
+  - Large hero typography similar to reference
+  - Clean, readable body text
+- Layout:
+  - Split hero layout (text left, products right)
+  - Organic curves and wave dividers
+  - Rounded sections and cards
+  - Grid-based product layouts
+- UI Elements:
+  - Pill-shaped buttons
+  - Rounded product cards
+  - Soft drop shadows
+  - Minimal line icons
+- Animations:
+  - Hover lift on product cards
+  - Smooth fade-in on scroll
+  - Subtle button hover glow
+
+AI Image Guidance:
+Use AI-generated images for:
+- Floating supplement jars and pouches
+- Variant visuals (flavors, sizes)
+- Soft lifestyle fitness imagery
+- Ingredient close-ups
+- Abstract wellness shapes
+Ensure consistent lighting, soft shadows, and realistic textures.
