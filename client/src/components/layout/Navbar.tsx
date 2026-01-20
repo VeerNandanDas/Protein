@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { ShoppingBag, Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,16 +17,16 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Shop", href: "#shop" },
-    { name: "About", href: "#about" },
-    { name: "Science", href: "#science" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "Shop", href: "/shop" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
+        scrolled || location !== "/" ? "bg-white/80 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
@@ -40,13 +41,13 @@ export function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-foreground/80 hover:text-primary font-medium transition-colors text-sm uppercase tracking-wide"
-            >
-              {link.name}
-            </a>
+            <Link key={link.name} href={link.href}>
+              <a className={`text-sm uppercase tracking-wide font-medium transition-colors ${
+                location === link.href ? "text-primary" : "text-foreground/80 hover:text-primary"
+              }`}>
+                {link.name}
+              </a>
+            </Link>
           ))}
         </div>
 
@@ -71,13 +72,13 @@ export function Navbar() {
               <SheetContent>
                 <div className="flex flex-col gap-6 mt-10">
                   {navLinks.map((link) => (
-                    <a
-                      key={link.name}
-                      href={link.href}
-                      className="text-2xl font-heading font-bold text-foreground hover:text-primary"
-                    >
-                      {link.name}
-                    </a>
+                    <Link key={link.name} href={link.href}>
+                      <a className={`text-2xl font-heading font-bold ${
+                        location === link.href ? "text-primary" : "text-foreground hover:text-primary"
+                      }`}>
+                        {link.name}
+                      </a>
+                    </Link>
                   ))}
                 </div>
               </SheetContent>
