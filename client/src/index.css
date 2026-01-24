@@ -38,36 +38,36 @@
 
 /* LIGHT MODE - Pastel Wellness Theme */
 :root {
-  /* Cream / Off-white Background */
-  --background: 45 30% 96%; 
-  /* Dark Green/Charcoal for text - softer than black */
-  --foreground: 150 20% 15%;
+  /* Soft lavender/white Background */
+  --background: 270 20% 98%; 
+  /* Dark Charcoal for text */
+  --foreground: 220 20% 10%;
 
-  /* Olive Green Accent - "Purity" */
-  --primary: 85 40% 55%;
-  --primary-foreground: 0 0% 100%;
+  /* Golden Yellow - from Provita button */
+  --primary: 38 90% 58%;
+  --primary-foreground: 220 20% 10%;
 
-  /* Soft Pastel Peach/Pink - "Wellness" */
-  --secondary: 20 70% 90%;
-  --secondary-foreground: 150 20% 15%;
+  /* Lavender/Purple - from Provita top bar */
+  --secondary: 270 45% 92%;
+  --secondary-foreground: 270 20% 20%;
 
-  /* Muted Green/Sage */
-  --accent: 120 25% 90%;
-  --accent-foreground: 150 20% 15%;
+  /* Muted Lavender */
+  --accent: 270 30% 95%;
+  --accent-foreground: 220 20% 10%;
 
   /* Soft Grey/Beige */
-  --muted: 40 20% 90%;
-  --muted-foreground: 150 10% 40%;
+  --muted: 220 10% 95%;
+  --muted-foreground: 220 10% 40%;
 
   /* White for Cards */
   --card: 0 0% 100%;
-  --card-foreground: 150 20% 15%;
+  --card-foreground: 220 20% 10%;
 
-  --border: 85 20% 85%;
-  --input: 85 20% 90%;
-  --ring: 85 40% 55%;
+  --border: 220 15% 90%;
+  --input: 220 15% 92%;
+  --ring: 38 90% 58%;
 
-  --radius: 1rem;
+  --radius: 0.75rem;
 }
 
 @layer base {

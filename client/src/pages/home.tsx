@@ -1,9 +1,10 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/home/Hero";
-import { Features } from "@/components/home/Features";
-import { CategorySection } from "@/components/home/CategorySection";
+import { BrandSection } from "@/components/home/BrandSection";
 import { ProductGrid } from "@/components/home/ProductGrid";
-import { AboutSection } from "@/components/home/AboutSection";
+import { CategoryGrid } from "@/components/home/CategoryGrid";
+import { FeaturedProtein } from "@/components/home/FeaturedProtein";
+import { FeaturedVitamins } from "@/components/home/FeaturedVitamins";
 import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
@@ -12,10 +13,11 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Features />
-        <CategorySection />
+        <BrandSection />
+        <CategoryGrid />
+        <FeaturedProtein />
         <ProductGrid />
-        <AboutSection />
+        <FeaturedVitamins />
       </main>
       <Footer />
     </div>

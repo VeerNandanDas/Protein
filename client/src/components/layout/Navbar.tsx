@@ -25,9 +25,8 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || location !== "/" ? "bg-white/80 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || location !== "/" ? "bg-white/80 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
+        }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -42,9 +41,8 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link key={link.name} href={link.href}>
-              <a className={`text-sm uppercase tracking-wide font-medium transition-colors ${
-                location === link.href ? "text-primary" : "text-foreground/80 hover:text-primary"
-              }`}>
+              <a className={`text-sm uppercase tracking-wide font-medium transition-colors ${location === link.href ? "text-primary" : "text-foreground/80 hover:text-primary"
+                }`}>
                 {link.name}
               </a>
             </Link>
@@ -60,7 +58,7 @@ export function Navbar() {
             <ShoppingBag className="w-5 h-5 text-foreground/70" />
             <span className="absolute top-0 right-0 w-2 h-2 bg-primary rounded-full ring-2 ring-white" />
           </Button>
-          
+
           {/* Mobile Menu */}
           <div className="md:hidden">
             <Sheet>
@@ -73,9 +71,8 @@ export function Navbar() {
                 <div className="flex flex-col gap-6 mt-10">
                   {navLinks.map((link) => (
                     <Link key={link.name} href={link.href}>
-                      <a className={`text-2xl font-heading font-bold ${
-                        location === link.href ? "text-primary" : "text-foreground hover:text-primary"
-                      }`}>
+                      <a className={`text-2xl font-heading font-bold ${location === link.href ? "text-primary" : "text-foreground hover:text-primary"
+                        }`}>
                         {link.name}
                       </a>
                     </Link>
