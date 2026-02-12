@@ -5,9 +5,9 @@ import bgImage from "@assets/bg image.png";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-32 pb-24 overflow-hidden bg-background">
-      {/* Background Image Layer */}
+      {/* Background Image Layer - Desktop Only */}
       <div
-        className="absolute inset-0 z-0"
+        className="hidden md:block absolute inset-0 z-0"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: 'cover',
@@ -39,7 +39,18 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right side space reserved to maintain layout */}
+        {/* Mobile Image - Below Text */}
+        <div className="block md:hidden w-full relative z-10 mt-[-2rem]">
+          <div className="relative aspect-square w-full max-w-sm mx-auto">
+            <img
+              src={bgImage}
+              alt="Protein Products"
+              className="w-full h-full object-contain drop-shadow-xl scale-110"
+            />
+          </div>
+        </div>
+
+        {/* Right side space reserved to maintain layout on desktop */}
         <div className="hidden md:block" />
       </div>
 
